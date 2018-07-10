@@ -1,0 +1,66 @@
+/* Typography */
+
+$font1: 'Helvetica Neue', "Helvetia", "Arial", sans-serif;
+$font2: 'Times New Roman', serif;
+
+body {
+	font-family: $font2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font1;
+}
+
+/* Images */
+img {
+	max-width: 100%;
+
+	&:hover {
+		transform: scale(2.5);
+		webkit-box-shadow: 10px 10px 38px -15px rgba(0,0,0,0.75);
+	    -moz-box-shadow: 10px 10px 38px -15px rgba(0,0,0,0.75);
+		box-shadow: 10px 10px 38px -15px rgba(0,0,0,0.75); 
+	}
+}
+
+/* Layout */
+
+body {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 2em;
+	margin: 1rem;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 428px;
+	grid-column-gap: 10px;
+	grid-row-gap: 40px;
+}
+
+.blank {
+	background-color: #fafafa;
+	box-sizing: border-box;
+	border: 2px dotted #acacac;
+
+	display: flex;
+
+	p {
+		font-family: $font1;
+		font-size: 4em;
+		color: #ccc;
+		margin: auto;
+	}
+}
+
+
+/*@media screen and (max-width: 768px) {
+
+}*/
